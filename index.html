@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .login-container,
+      .dashboard {
+        display: none;
+      }
+      .login-container,
+      .register-container,
+      .dashboard {
+        border: 1px solid black;
+      }
+      .nav {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <button>Login</button>
+      <button>Register</button>
+    </div>
+
+    <div class="login-container">
+      <h2>Login to Your Account</h2>
+      <form id="login-form">
+        <input type="email" name="email" value="email@test.com" />
+        <br />
+        <br />
+        <input type="password" name="password" value="123" />
+        <br />
+        <br />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div class="register-container">
+      <h2>Register Your Account</h2>
+      <form id="register-form">
+        <input type="email" name="email" value="email@test.com" />
+        <br />
+        <br />
+        <input type="password" name="password" value="123" />
+        <br />
+        <br />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div class="dashboard">
+      <input type="number" min="1" id="amount" />
+      <br />
+      <br />
+      <button id="wit">Withdraw</button>
+      <button id="dep">Deposit</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
